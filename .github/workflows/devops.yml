@@ -1,4 +1,4 @@
-name: "CodeQL Scan"
+name: "MSDO Scan"
 
 on:
   push:
