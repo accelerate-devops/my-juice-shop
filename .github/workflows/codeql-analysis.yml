@@ -30,6 +30,9 @@ jobs:
         
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
+      
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
 
     - name: Run Microsoft Security DevOps Analysis
       uses: microsoft/security-devops-action@preview
@@ -40,8 +43,7 @@ jobs:
       with:
         sarif_file: ${{ steps.msdo.outputs.sarifFile }}
       
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
+
       
       
 
