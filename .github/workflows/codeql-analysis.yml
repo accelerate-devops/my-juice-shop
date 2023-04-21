@@ -35,7 +35,7 @@ jobs:
       uses: github/codeql-action/analyze@v2
 
     - name: Run Microsoft Security DevOps Analysis
-      uses: microsoft/security-devops-action@preview
+      uses: microsoft/security-devops-action@v1.6.0
       id: msdo
 
     - name: Upload alerts to Security tab
